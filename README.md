@@ -1,2 +1,3 @@
 # SpringBootのデモアプリケーションです
-![画面収録 2025-06-21 20 01 09](https://github.com/user-attachments/assets/daf20bc2-c65e-4595-a393-dd785692c804)
+
+![画面収録 2025-06-21 20 20 54 (1)](https://github.com/user-attachments/assets/5eae035c-1375-430a-9ba1-8d2a161dac94)
