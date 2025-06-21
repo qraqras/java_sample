@@ -4,16 +4,13 @@ services:
       context: ./java
       dockerfile: Dockerfile
     volumes:
-      - ./java/prj:/prj
+      - ./demo/:/prj/demo
     ports:
       - "8081:8081"
     command: sleep infinity
   mysql:
-    image: mysql:8.4
-    environment:
-      MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: demo_db
-      MYSQL_USER: user
-      MYSQL_PASSWORD: password
+    build:
+      context: ./mysql
+      dockerfile: Dockerfile
     ports:
       - "3306:3306"
