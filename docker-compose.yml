@@ -1,6 +1,8 @@
 services:
   java:
-    image: eclipse-temurin:21-jdk
+    build:
+      context: ./java
+      dockerfile: Dockerfile
     volumes:
       - ./java/prj:/prj
     ports:
