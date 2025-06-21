@@ -1,15 +1,13 @@
 services:
   java:
-    build:
-      context: java
-      dockerfile: Dockerfile
+    image: eclipse-temurin:21-jdk
     volumes:
-      - ./java/src:/src
+      - ./java/prj:/prj
     ports:
       - "8081:8081"
     command: sleep infinity
   mysql:
-    image: mysql:latest
+    image: mysql:8.4
     environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: demo_db

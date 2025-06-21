@@ -2,7 +2,7 @@
     "name": "Java Sample",
     "dockerComposeFile": "../docker-compose.yml",
     "service": "java",
-    "workspaceFolder": "/src",
+    "workspaceFolder": "/prj",
     "shutdownAction": "stopCompose",
     "customizations": {
         "vscode": {
@@ -10,7 +10,9 @@
                 "java.jdt.ls.java.home": "/opt/java/openjdk"
             },
             "extensions": [
-                "vscjava.vscode-java-pack",
+                "redhat.java",
+                "vscjava.vscode-java-dependency",
+                "vscjava.vscode-gradle",
                 "vmware.vscode-boot-dev-pack"
             ]
         }
