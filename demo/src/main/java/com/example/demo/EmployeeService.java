@@ -8,7 +8,6 @@ public class EmployeeService {
 
     private final EmployeeRepository repo;
 
-    @Autowired
     public EmployeeService(EmployeeRepository repo) {
         this.repo = repo;
     }
